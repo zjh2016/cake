@@ -1,0 +1,16 @@
+
+		/*===================main=====================*/
+		#main{width:100%;height:620px;}
+		#main .biti{display:block;width:100%;height:50px;line-height: 50px; background-color:#5d9b7a;text-align:center;margin:20px 0;color:white;}
+		#main .left{width:30%;float:left;overflow:hidden;z-index:1;}
+		#main .left img{width:100%;display:block;}
+		#main .center{width:39.5%;float:left;padding-left:2px;}
+		#main .center img{width:100%;}
+		#main .center .word{background:#280327;width:100%;height:90px;color:white;padding-top:20px;}
+		#main .center .word:hover{}
+		#main .center .word span{margin-left:40px;}
+		#main .center .word span:nth-child(1){font-size:20px;}
+		#main .center .word span:nth-child(3){display:inline-block;height:20px;line-height:20px;}
+		#main .right{width:30%;height:410px;float:right;}
+		#main .right img{width:100%;padding-top:10px;}
+		#main  img:hover{opacity:0.5;}

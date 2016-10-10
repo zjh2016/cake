@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻列表</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- 轮播图和下拉菜单的js合并了 -->
+	<script src="../js/push.js"></script>
+	<style>
+		h2{border-bottom:1px dashed #9a21d9;padding:10px 40%;color:red;opacity:0.6;}
+		h3{color:#ff9933;padding:5px 5%;}
+		h4{color:#ff9933;padding:15px 35%;border-bottom:1px dashed #ff9933;}
+		/*====================main================================*/
+		#main{width:90%;height:580px;margin:0 auto;background:url('../images/bg.png');}
+		/*===========================left=========================*/
+		#left{float:left;width:73%;height:100%;border:1px solid gray; }
+		#left ul{width:100%;list-style:none;}
+		#left ul li{width:32%;height:210px;float:left; padding:10px 0;border-bottom:1px dashed #ff9933;position:relative;}
+		#left ul li p{padding:0 5px;opacity:0.6;}
+		#left ul li img{width:80%;height:90%;margin:15px 25px; border-radius:40px;}
+		#left ul li:nth-child(1)::after{
+		content:"中秋快乐";width:50px;height:50px; border-radius:100px; position:absolute;left:35%;top:30%;background:#9999cc; color:white;font-size:12px;padding:30px; transform:scale(0);
+		transition:linear 1s;
+		}
+		 #left ul li:hover::after{
+			cursor:pointer;
+			transform:scale(2);
+			opacity:0.4;
+			overflow:hidden;
+		}
+		#left ul li input{position:absolute;left:50px;bottom:30px;background:#999999;width:100px;height:40px;border-radius:7px;}
+		#left ul li input:nth-child(2){left:180px;}
+		/*============right==================*/
+		#right{float:right;width:24%;height:100%;border:1px dashed gray;}
+		h1{width:70%;margin:20px auto;padding-left:10px;background:gray;text-align:center;font-size:26px;}
+		#right1{margin-top:100px;}
+		.span{ display:block; width:80%;margin:10px auto; height:50px; background:linear-gradient(to bottom,#ffcfd2 10%,#f0878d 59%);text-align: center; line-height:50px; cursor:pointer;}
+		.span.show{background-color:yellow;}
+		.div{ width:80%;height:0px; background:#FC9;/*text-align:center; */margin:0 auto;transition:height 0.5s;overflow:hidden;}
+		.div.cur{width:80%;height:200px; margin:0 auto;display:block;transition:height 0.5s;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="nav">
+			<div class="img"><img src="../images/logo.png" alt=""></div>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li id="sencond"><a href="product.html">蛋糕馆</a>
+					<ul class="secmenu">
+						<li><a href="product2.html">芝士口味</a></li>
+						<li><a href="product3.html">慕斯口味</a></li>
+						<li><a href="product4.html">生日类型</a></li>
+						<li><a href="product5.html">水果时刻</a></li>
+					</ul>
+				</li>
+				<li><a href="introduce.html">公司简介</a></li>
+				<li><a href="news.html"><mark style="background:none;color:#f30a10;">新闻动态</mark></a></li>
+				<li><a href="about.html">关于我们</a></li>
+			</ul>
+		</div>
+		<div id="lun">
+			<img class="currentImg" src="../images/lun6.jpg" alt="">
+			<img src="../images/lun7.jpg" alt="">
+			<img src="../images/lun3.jpg" alt="">
+			<img src="../images/lun4.jpg" alt="">
+			<img src="../images/lun5.jpg" alt="">
+			<div class="btn">
+				<span class="currentSpan">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+			</div>
+		</div>
+		<div id="main">
+			<div id="left">
+				<h2>新闻动态</h2>
+				<h3>中秋将至，为了共度佳节我们公司为大家精心准备了月饼,样品如下</h3>
+				<ul>
+					<li><img src="../images/盒台月饼.jpg" alt=""></li>
+					<li><h4>盒台月饼</h4>
+						<p>主要材料：面，五仁，糖</p><p>主要营养成分:
+	                     蛋白质，不饱和脂肪酸，维生素E </p><p>月饼内馅多采用植物性原料种子，如核桃仁、杏仁、芝麻仁、月饼瓜子、山楂、莲蓉、红小豆、枣泥等，对人体有一定的保健作用。</p><p>月饼圆又圆，又是合家分吃，象征着团圆和睦，在中秋节这一天是必食之品。</p>
+
+	                 </li>
+					<li><input type="button"value="加入购物车">
+						<input class="two" type="button"value="查看详情"></li>
+				</ul>
+				<ul>
+					<li><img src="../images/t中秋１.jpg" alt=""></li>
+					<li><h4>盒台月饼</h4>
+						<p>主要材料：面，五仁，糖</p><p>主要营养成分:
+	                     蛋白质，不饱和脂肪酸，维生素E </p><p>月饼内馅多采用植物性原料种子，如核桃仁、杏仁、芝麻仁、月饼瓜子、山楂、莲蓉、红小豆、枣泥等，对人体有一定的保健作用。</p><p>月饼圆又圆，又是合家分吃，象征着团圆和睦，在中秋节这一天是必食之品。</p></li>
+					<li><input type="button"value="加入购物车">
+						<input class="two" type="button"value="查看详情">
+					</li>
+				</ul>
+			</div>
+			<div id="right">
+				<h1>更多资讯</h1>
+				<div id="right1">
+					<span class="span"><i class="icon-double-angle-down icon-2x"></i></span>
+					<div class="div">
+						<p><a href="">1:世界那么大，能相遇，不容易</a></p>
+						<p><a href="">2:遇见，就是幸福。</a></p>
+						<p><a href="">3:遇见，就是幸福。</a></p>
+						<p><a href="">4:遇见，就是幸福。</a></p>
+						<p><a href="">5:遇见，就是幸福。</a></p>
+						<p><a href="">6:祝大家中秋快乐。</a></p>
+					</div>
+					<span class="span"><i class="icon-double-angle-down icon-2x"></i></span>
+					<div class="div">
+						<p><a href="">1:世界那么大，能相遇，不容易</a></p>
+						<p><a href="">2:遇见，就是幸福。</a></p>
+						<p><a href="">3:遇见，就是幸福。</a></p>
+						<p><a href="">4:遇见，就是幸福。</a></p>
+						<p><a href="">5:遇见，就是幸福。</a></p>
+						<p><a href="">6:祝大家中秋快乐。</a></p>
+					</div>
+					<span class="span"><i class="icon-double-angle-down icon-2x"></i></span>
+					<div class="div">
+						<p><a href="">1:世界那么大，能相遇，不容易</a></p>
+						<p><a href="">2:遇见，就是幸福。</a></p>
+						<p><a href="">3:遇见，就是幸福。</a></p>
+						<p><a href="">4:遇见，就是幸福。</a></p>
+						<p><a href="">5:遇见，就是幸福。</a></p>
+						<p><a href="">6:祝大家中秋快乐。</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>联系我们</p>
+			<ul>
+				
+				<li>
+					<a href=""class="icon-building">&nbsp;:北京瑞兹食品有限公司</a>
+				</li>
+				<li>
+					<a href=""class=" icon-map-marker">&nbsp;:北京市西城区食品楼</a>
+				</li>
+				<li>
+					<a href=""class=" icon-phone">&nbsp;:7890089006</a>
+				</li>
+				<li>
+					<a href=""class=" icon-envelope">&nbsp;:ruizi7890089006</a>
+				</li>
+
+			</ul>
+			<p>Copyright@ 2005 - 2016　BURT'S BEES .All Rights Reserved.</p>
+			<p>小蜜蜂公司 版权所有</p>	
+		</div>
+	</div> 
+</body>
+</html>

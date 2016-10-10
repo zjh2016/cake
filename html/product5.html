@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>product</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		hr{color:white;width:90%;margin:0 20px;}
+		#main{width:100%;height:900px;}
+		#left{width:15%;height:100%;float:left;background:url('../images/TN_BG3.jpg');}
+		#right{width:15%;height:100%;float:right;background:url('../images/TN_BG3.jpg') 200px 0;}
+		#product{width:70%;height:100%;background:#f4c9cc;float:left;}
+		#product ul{width:100%;height:32%;margin-top:10px;overflow:hidden;border-bottom:1px dashed gray;}
+		#product ul li{width:30%;height:100%;margin-left:10px; float:left;position: relative;overflow:hidden;}
+		#product ul li img{width:100%;margin-left:10px;margin-top:30px;position:relative;}
+		#product .words{width:90%;margin:0 20px;overflow:hidden;position:absolute;left:0;bottom:45px;}
+		#product .words span{text-indent:5px;display:inline-block;height:30px;line-height:30px;color:white;}
+		#product li .show{width:100%;height:0;position:absolute;left:0;bottom:0px; margin:8px auto;opacity:0;}
+		#product li .show img{width:100%;height:100%;}
+		#product li:hover .show{
+			cursor:pointer;
+			animation:my 0.5s linear 0.5s forwards;opacity:1;}
+		@keyframes my{
+			from{height:0%;}
+			to{height:100%;}
+		}
+		#product .words span mark{color:red;font-size:20px;background:none;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="nav">
+			<div class="img"><img src="../images/logo.png" alt=""></div>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li id="sencond"><a href="product.html">蛋糕馆</a>
+					<ul class="secmenu">
+						<li><a href="product5.html">水果时刻</a></li>
+						<li><a href="product2.html">芝士口味</a></li>
+						<li><a href="product3.html">慕斯口味</a></li>
+						<li><a href="product4.html">生日类型</a></li>
+					</ul>
+				</li>
+				<li><a href="introduce.html">公司简介</a></li>
+				<li><a href="news.html">新闻动态</a></li>
+				<li><a href="about.html">关于我们</a></li>
+			</ul>
+		</div>
+		<div id="lun">
+			<img class="currentImg" src="../images/lun6.jpg" alt="">
+			<img src="../images/lun7.jpg" alt="">
+			<img src="../images/lun3.jpg" alt="">
+			<img src="../images/lun4.jpg" alt="">
+			<img src="../images/lun5.jpg" alt="">
+			<div class="btn">
+				<span class="currentSpan">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+			</div>
+		</div>
+		<div id="main">
+			<div id="left"></div>
+			<div id="product">
+				<ul>
+					<li><img src="../images/盒台月饼.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;田园风光奶油&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+					　 <div class="show">
+							<img src="../images/浪漫.jpg" alt="">
+						</div>
+					</li>
+					　
+					<li>
+						<img src="../images/罗马假日.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;美丽约蛋糕&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+						<div class="show">
+								<img src="../images/许愿.jpg" alt="">
+						</div>
+					</li>
+					<li><img src="../images/芒果雪域芝士.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;美丽约蛋糕&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:
+								法国蓉草莓泥</span>
+						</div>
+						<div class="show">
+							<img src="../images/纯真.jpg" alt="">
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li><img src="../images/繁星之吻.png" alt="">
+						<div class="words">
+							<span>&nbsp;白色恋人&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+						<div class="show">
+							<img src="../images/感恩.jpg" alt="">
+						</div>
+					</li>
+					<li><img src="../images/1.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;巴伐利亚风光&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+						<div class="show">
+							<img src="../images/浪漫.jpg" alt="">
+						</div>
+					</li>
+					<li>
+						<img src="../images/2.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;生日约蛋糕&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+						<div class="show">
+							<img src="../images/浪漫.jpg" alt="">
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<img src="../images/3.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;蓝莓芝士蛋糕&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+						<div class="show">
+							<img src="../images/派对.jpg" alt="">>
+						</div>
+					</li>
+					<li>
+						<img src="../images/4.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;仲夏夜之梦&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+						<div class="show">
+							<img src="../images/午后.jpg" alt="">>
+						</div>	
+					</li>
+					<li>
+						<img src="../images/5.jpg" alt="">
+						<div class="words">
+							<span>&nbsp;草莓慕斯&nbsp;</span>
+							<span>4寸: <mark>50￥</mark></span>
+							<hr>
+							<span>&nbsp;主要材料:法国铁塔淡奶油</span>
+						</div>
+						<div class="show">
+							<img src="../images/许愿.jpg" alt="">
+						</div>
+					</li>
+				</ul>
+		</div>
+			<div id="right"></div>
+		</div>
+		<div id="footer">
+			<p>联系我们</p>
+			<ul>
+				
+				<li>
+					<a href=""class="icon-building">&nbsp;:北京瑞兹食品有限公司</a>
+				</li>
+				<li>
+					<a href=""class=" icon-map-marker">&nbsp;:北京市西城区食品楼</a>
+				</li>
+				<li>
+					<a href=""class=" icon-phone">&nbsp;:7890089006</a>
+				</li>
+				<li>
+					<a href=""class=" icon-envelope">&nbsp;:ruizi7890089006</a>
+				</li>
+
+			</ul>
+			<p>Copyright@ 2005 - 2016　BURT'S BEES .All Rights Reserved.</p>
+			<p>小蜜蜂公司 版权所有</p>	
+		</div>
+	</div>
+</body>
+</html>
